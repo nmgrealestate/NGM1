@@ -6969,6 +6969,16 @@ fieldset:disabled .btn {
   text-align: center;
 }
 
+#carouselExampleCaptions .carousel-caption {
+  position: absolute;
+  left: 7%;
+  bottom: 28%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: left;
+}
+
 .carousel-dark .carousel-control-prev-icon,
 .carousel-dark .carousel-control-next-icon {
   filter: invert(1) grayscale(100);
@@ -13187,6 +13197,8 @@ body {
   background: #E7C873;
   color: black;
   padding: 8px 15px;
+  text-transform: unset !important;
+  letter-spacing: unset !important;
 }
 
 /* end ::: feature section */
@@ -13230,12 +13242,12 @@ body {
 
 #testimonialCarousel .carousel {
   margin: 0 0.5em;
-  border: 0;  
+  border: 0;
 }
 
 #testimonialCarousel .card {
   margin: 0 0.5em;
-  border: 0;  
+  border: 0;
   height: 280px;
 }
 
