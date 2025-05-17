@@ -13166,7 +13166,8 @@ body {
 /* end ::: gallery */
 
 .card-title {
-  color: #28c8f6 !important;
+  color: #00477B !important;
+  font-weight: bold;
 }
 
 .card-text {
@@ -13176,6 +13177,7 @@ body {
 
 .card-title span {
   color: black !important;
+  font-weight: 100;
 }
 
 /* start ::: feature section */
@@ -13248,7 +13250,7 @@ body {
 #testimonialCarousel .card {
   margin: 0 0.5em;
   border: 0;
-  height: 280px;
+  height: 365px;
 }
 
 #testimonialCarousel .carousel-control-prev,
@@ -13262,3 +13264,15 @@ body {
 }
 
 /* end ::: testimonial section */
+
+
+@media screen and (max-width: 520px) {
+  .contact-button-out {
+    visibility: hidden;
+    display: none !important;
+  }
+  .contact-button-in {
+    visibility: visible;
+    display: block !important;
+  }
+}
