@@ -3896,6 +3896,10 @@ fieldset:disabled .btn {
     right: 0;
     left: auto;
   }
+
+  #carouselExampleCaptions{
+    margin-top: 90px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -3915,6 +3919,10 @@ fieldset:disabled .btn {
   .dropdown-menu-lg-end[data-bs-popper] {
     right: 0;
     left: auto;
+  }
+
+  #carouselExampleCaptions{
+    margin-top: 70px;
   }
 }
 
