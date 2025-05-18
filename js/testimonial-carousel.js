@@ -11,7 +11,6 @@ if (window.matchMedia("(min-width:576px)").matches) {
   var scrollPosition = 0;
 
   $("#testimonialCarousel .carousel-control-next").on("click", function () {
-    debugger;
     if (scrollPosition < carouselWidth - cardWidth * 3) {
       console.log("next");
       scrollPosition = scrollPosition + cardWidth;
@@ -19,7 +18,6 @@ if (window.matchMedia("(min-width:576px)").matches) {
     }
   });
   $("#testimonialCarousel .carousel-control-prev").on("click", function () {
-    debugger;
     if (scrollPosition > 0) {
       scrollPosition = scrollPosition - cardWidth;
       $("#testimonialCarousel .carousel-inner").animate({ scrollLeft: scrollPosition }, 800);

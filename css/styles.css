@@ -2248,40 +2248,68 @@ progress {
   -webkit-overflow-scrolling: touch;
 }
 
-@media (max-width: 575.98px) {
-  .table-responsive-sm {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-}
 
-@media (max-width: 767.98px) {
-  .table-responsive-md {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-}
 
-@media (max-width: 991.98px) {
-  .table-responsive-lg {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-}
 
-@media (max-width: 1199.98px) {
-  .table-responsive-xl {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-}
+
+
+
+
 
 @media (max-width: 1399.98px) {
   .table-responsive-xxl {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+}@media (max-width: 1199.98px) {
+  .table-responsive-xl {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}@media (max-width: 991.98px) {
+  .table-responsive-lg {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}@media (max-width: 767.98px) {
+  .table-responsive-md {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+
+  #carouselExampleCaptions .carousel-caption{
+    bottom: 20% !important;
+  }
 }
+@media (max-width: 650px) {
+  .feature-button {
+    font-size: x-small !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .table-responsive-sm {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  #carouselExampleCaptions .carousel-caption{
+    bottom: 15% !important;
+  }
+}
+
+@media (max-width: 450px) {
+  #carouselExampleCaptions .carousel-caption{
+    bottom: 10% !important;
+  }
+}
+
+@media (max-width: 350px) {
+  #carouselExampleCaptions .carousel-caption{
+    bottom: 10% !important;
+  }
+}
+
+
 
 .form-label {
   margin-bottom: 0.5rem;
@@ -6971,8 +6999,8 @@ fieldset:disabled .btn {
 
 #carouselExampleCaptions .carousel-caption {
   position: absolute;
-  left: 7%;
-  bottom: 28%;
+  
+  bottom: 25%;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   color: #fff;
@@ -12879,6 +12907,7 @@ body {
   }
 
   #mainNav.navbar-shrink .nav-link.active {
+    font-weight: bold;
     color: #64a19d;
     outline: none;
     border-bottom: 0.25rem solid #64a19d;
@@ -13195,10 +13224,10 @@ body {
 }
 
 .feature-button {
-  font-size: xx-small;
+  font-size: small;
   background: #E7C873;
   color: black;
-  padding: 8px 15px;
+  padding: 10px 15px;
   text-transform: unset !important;
   letter-spacing: unset !important;
 }
