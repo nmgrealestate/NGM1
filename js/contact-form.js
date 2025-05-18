@@ -1,6 +1,5 @@
 let form = document.querySelector("form");
 form.addEventListener('submit', (e) => {
-    debugger;
     e.preventDefault();
     //Validate text box
     document.getElementById("contactError").style.display = "none";
