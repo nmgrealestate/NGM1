@@ -2261,50 +2261,59 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
-}@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 1199.98px) {
   .table-responsive-xl {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
-}@media (max-width: 991.98px) {
+}
+
+@media (max-width: 991.98px) {
   .table-responsive-lg {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
-}@media (max-width: 767.98px) {
+}
+
+@media (max-width: 767.98px) {
   .table-responsive-md {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
-  
 
-  #carouselExampleCaptions .carousel-caption{
+
+  #carouselExampleCaptions .carousel-caption {
     bottom: 20% !important;
   }
 }
+
 @media (max-width: 650px) {
   .feature-button {
     font-size: x-small !important;
   }
 }
+
 @media (max-width: 575.98px) {
   .table-responsive-sm {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
-  #carouselExampleCaptions .carousel-caption{
+
+  #carouselExampleCaptions .carousel-caption {
     bottom: 15% !important;
   }
 }
 
 @media (max-width: 450px) {
-  #carouselExampleCaptions .carousel-caption{
+  #carouselExampleCaptions .carousel-caption {
     bottom: 10% !important;
   }
 }
 
 @media (max-width: 350px) {
-  #carouselExampleCaptions .carousel-caption{
+  #carouselExampleCaptions .carousel-caption {
     bottom: 10% !important;
   }
 }
@@ -3858,6 +3867,18 @@ fieldset:disabled .btn {
   left: auto;
 }
 
+
+@media (max-width: 300px) {
+  #carouselExampleCaptions {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 300px) {
+  #carouselExampleCaptions {
+    margin-top: 100px;
+  }
+}
+
 @media (min-width: 576px) {
   .dropdown-menu-sm-start {
     --bs-position: start;
@@ -3896,10 +3917,6 @@ fieldset:disabled .btn {
     right: 0;
     left: auto;
   }
-
-  #carouselExampleCaptions{
-    margin-top: 90px;
-  }
 }
 
 @media (min-width: 992px) {
@@ -3921,7 +3938,7 @@ fieldset:disabled .btn {
     left: auto;
   }
 
-  #carouselExampleCaptions{
+  #carouselExampleCaptions {
     margin-top: 70px;
   }
 }
@@ -7007,7 +7024,7 @@ fieldset:disabled .btn {
 
 #carouselExampleCaptions .carousel-caption {
   position: absolute;
-  
+
   bottom: 25%;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -13308,6 +13325,7 @@ body {
     visibility: hidden;
     display: none !important;
   }
+
   .contact-button-in {
     visibility: visible;
     display: block !important;
