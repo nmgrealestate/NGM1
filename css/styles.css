@@ -2285,7 +2285,7 @@ progress {
 
 
   #carouselExampleCaptions .carousel-caption {
-    bottom: 20% !important;
+    bottom: 25% !important;
   }
 }
 
@@ -2302,19 +2302,19 @@ progress {
   }
 
   #carouselExampleCaptions .carousel-caption {
-    bottom: 15% !important;
+    bottom: 20% !important;
   }
 }
 
 @media (max-width: 450px) {
   #carouselExampleCaptions .carousel-caption {
-    bottom: 10% !important;
+    bottom: 15% !important;
   }
 }
 
 @media (max-width: 350px) {
   #carouselExampleCaptions .carousel-caption {
-    bottom: 10% !important;
+    bottom: 15% !important;
   }
 }
 
@@ -7025,7 +7025,7 @@ fieldset:disabled .btn {
 #carouselExampleCaptions .carousel-caption {
   position: absolute;
 
-  bottom: 25%;
+  bottom: 35%;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   color: #fff;
@@ -13153,8 +13153,8 @@ body {
 }
 
 #section-about {
-  padding-top: 70px !important;
-  padding-bottom: 70px !important;
+  padding-top: 50px !important;
+  padding-bottom: 30px !important;
 }
 
 /* start ::: slide up */
@@ -13231,7 +13231,7 @@ body {
 
 .card-title span {
   color: black !important;
-  font-weight: 100;
+  /* font-weight: 100; */
 }
 
 /* start ::: feature section */
@@ -13330,4 +13330,8 @@ body {
     visibility: visible;
     display: block !important;
   }
+}
+
+.featurs-item img{
+  filter: invert(1) !important;
 }
