@@ -74,7 +74,7 @@
     <!-- END ::: Navigation-->
 
     <!-- START ::: Banner-->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -87,7 +87,7 @@
             <div class="carousel-item active">
                 <img src="assets\img\b1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-md-block" style="left: 7%;">
-                    <a href="#" class="btn btn-secondary feature-button">Explore Our Projects<i
+                    <a href="#section-explore" class="btn btn-secondary feature-button">Explore Our Projects<i
                             class='fas fa-arrow-right' style="padding-left:10px"></i></a>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -115,7 +115,7 @@
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-        </button>
+        </button> -->
     </div>
     <!-- END ::: Banner-->
 
@@ -380,12 +380,12 @@
     <!-- END ::: USP -->
 
     <!-- START ::: About -->
-    <section id="section-about" class="text-center container w-100">
+    <section id="section-explore" class="text-center container w-100">
         <div class="row w-100 mx-auto">
-            <div class="col-12 text-center mx-auto">
+            <div class="col-12 text-center mx-auto box box-slide-up">
                 <h4 class="card-title h3 pb-5"><span>Featured </span>Projects Preview
                 </h4>
-                <div class="card box box-slide-up">
+                <div class="card">
                     <div class="card-body p-0 feature-parent-container">
                         <img src="assets\img\feature-1.jpg" width="100%" style="max-height: 350px; object-fit: cover;">
                         <div class="feature-centered">
@@ -395,7 +395,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card mt-3 box box-slide-up">
+                <div class="card mt-3">
                     <div class="card-body p-0 feature-parent-container">
                         <img src="assets\img\feature-2.jpg" width="100%" style="max-height: 350px; object-fit: cover;">
                         <div class="feature-centered">
@@ -604,6 +604,7 @@
             </div>
         </div>
     </section>
+
     <!-- Contact-->
     <section class="contact-section bg-black">
         <div class="container px-4 px-lg-5 box box-slide-up">
@@ -670,6 +671,7 @@
 
         </div>
     </section>
+
     <!-- Footer-->
     <footer class="footer bg-black small text-center text-white-50">
         <div class="container px-4 px-lg-5">Copyright &copy; 2025. Nanddmahalgroup</div>
@@ -694,7 +696,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>    
 
     <script src="js/jquery.min.js"></script>
     <!-- Bootstrap core JS-->
@@ -703,12 +705,35 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 
+    <!-- start ::: back to top -->
+    <div id="bkToTopButton" class="position-fixed bottom-0 end-0 mb-3 me-3 hide-backtotop">
+        <a class="btn btn-bd-primary p-2 d-flex align-items-center " type="button" aria-expanded="false"
+            onclick="scrollHome('');">
+            <i class="fa fa-home" aria-hidden="true"></i>
+        </a>
+    </div>
+    <script src="js/back-to-top.js"></script>
+    <!-- end ::: back to top -->
+
     <!-- start ::: for Image gallery -->
     <script src="js/baguetteBox.min.js"></script>
     <script>
         baguetteBox.run('.tz-gallery');
     </script>
     <!-- end ::: for Image gallery -->
+
+
+    <script>
+        $(document).ready(function () {
+            $(".carousel").carousel({
+                // interval: true,
+                // pause: true
+            });
+            $('.carousel .carousel-inner').on('dragstart', 'a', function () {
+                return false;
+            });
+        });
+    </script>
 
     <!-- start ::: for slide up -->
     <script>
